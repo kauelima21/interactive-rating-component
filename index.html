@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <div class="root">
+    <div>
+      <article class="rating">
+        <div class="final">
+          <div class="final_illustration">
+            <img src="images/illustration-thank-you.svg" alt="Share info icon">
+          </div>
+
+          <span class="final_rating"></span>
+
+          <h2>Thank you!</h2>
+
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don't hesitate to get in touch!
+          </p>
+        </div>
+
+        <header class="rating_header">
+          <div class="rating_header_icon">
+            <img src="images/icon-star.svg" alt="Icon star">
+          </div>
+        </header>
+        <section class="rating_section">
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+          
+          <form class="rating_form">
+            <input type="radio" name="rating" id="s-1" value="1">
+            <label for="s-1">
+              <span>1</span>
+            </label>
+            
+            <input type="radio" name="rating" id="s-2" value="2">
+            <label for="s-2">
+              <span>2</span>
+            </label>
+
+            <input type="radio" name="rating" id="s-3" value="3">
+            <label for="s-3">
+              <span>3</span>
+            </label>
+
+            <input type="radio" name="rating" id="s-4" value="4">
+            <label for="s-4">
+              <span>4</span>
+            </label>
+
+            <input type="radio" name="rating" id="s-5" value="5">
+            <label for="s-5">
+              <span>5</span>
+            </label>
+            
+            <button class="rating_form_button">Submit</button>
+          </form>
+        </section>
+      </article>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="github.com/kauelima21">Kaue Leal de Lima</a>.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

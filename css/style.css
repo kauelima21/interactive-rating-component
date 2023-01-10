@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --bp-mobile: 375px;
+  --bp-desktop: 1440px;
+
+  --primary: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-grey: hsl(210, 18%, 21%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  --text-paragraph: 15px;
+  --text-regular: 400;
+  --text-bold: 700;
+}
+
+.attribution {
+  padding-top: 10px;
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-grey);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  color: var(--white);
+}
+
+p {
+  color: var(--light-grey);
+  font-size: var(--text-paragraph);
+}
+
+.root {
+  background-color: var(--very-dark-blue);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.final {
+  display: none;
+  padding: 20px 0px;
+}
+
+.final .final_rating {
+  color: var(--primary);
+  font-size: var(--text-paragraph);
+  margin: 20px 0px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: var(--dark-grey);
+  width: max-content;
+  align-self: center;
+}
+
+.final .final_illustration {
+  align-self: center;
+}
+
+.final h2,
+.final p {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.rating {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 380px;
+}
+
+.rating .rating_header .rating_header_icon {
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating .rating_section {
+  padding-top: 30px;
+}
+
+.rating .rating_section h2 {
+  padding-bottom: 10px;
+}
+
+.rating .rating_section .rating_form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.rating .rating_section .rating_form input {
+  display: none;
+}
+
+.rating .rating_section .rating_form label {
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+  color: var(--light-grey);
+}
+
+.rating .rating_section .rating_form label:hover {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+
+.rating .rating_section .rating_form input[type="radio"]:checked + label {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.rating .rating_section .rating_form .rating_form_button {
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 10px 0px;
+  flex-basis: 100%;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+  font-weight: var(--text-bold);
+  letter-spacing: 0.15rem;
+}
+
+.rating .rating_section .rating_form .rating_form_button:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
